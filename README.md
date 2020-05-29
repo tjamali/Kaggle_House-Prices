@@ -1,14 +1,14 @@
 # Kaggle: House Prices Competition
 
-I am going to tackle one of the kaggle competition named "House Prices: Advanced Regression Techniques competition".
+This is one of the kaggle competition named "House Prices: Advanced Regression Techniques competition".
 
 I will go through the following steps to get a successful Kaggle submission:
 
-Acquire the data
+Download the data
 Explore the data
-Engineer and transform the features and the target variable
-Build a model
-Make and submit predictions
+Feature engineering 
+Make a model
+Make a submition file
 
 
 ## Getting Started
