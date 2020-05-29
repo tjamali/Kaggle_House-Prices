@@ -1,6 +1,15 @@
-# Project Title
+# Kaggle: House Prices Competition
 
-One Paragraph of project description goes here
+I am going to tackle one of the kaggle competition named "House Prices: Advanced Regression Techniques competition".
+
+I will go through the following steps to get a successful Kaggle submission:
+
+Acquire the data
+Explore the data
+Engineer and transform the features and the target variable
+Build a model
+Make and submit predictions
+
 
 ## Getting Started
 
