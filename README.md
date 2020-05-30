@@ -5,9 +5,13 @@ This is one of the kaggle competition named "House Prices: Advanced Regression T
 I will go through the following steps to get a successful Kaggle submission:
 
 Download the data
+
 Explore the data
+
 Feature engineering 
+
 Make a model
+
 Make a submition file
 
 
