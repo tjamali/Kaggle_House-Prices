@@ -84,5 +84,5 @@ Partitioning the data into *train* and *valid* allows us to evaluate our model p
 
 ### Step 4: Make a submission file
 
-At this point, we are ready to create a csv file including the predicted SalePrice for each observation in the test.csv dataset. After making submission file we should go to the submission page to make a submission.
+At this point, we are ready to create a csv file including the predicted SalePrice for each observation in the test.csv dataset. After making submission file we should go to the [submission page] (https://www.kaggle.com/c/house-prices-advanced-regression-techniques/submit) to make a submission.
 
