@@ -46,7 +46,7 @@ test = pd.read_csv('test.csv')
 
 The test dataframe contains 80 features, while the train dataframe has 81 features. The difference comes from this fact that the test data does not have the sale price column!
 
-### Step 2: Explore the data and Feature engineering
+### Step 2: Explore the data and feature engineering
 
 The main aim is to predict the sale price of the homes. In the training dataset, the SalePrice column (target variable) shows this information.
 
