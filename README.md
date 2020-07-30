@@ -39,7 +39,7 @@ import matplotlib.pyplot as plt
 ```
 We can use Pandas to read csv files as follows:
 
-```
+```py
 train = pd.read_csv('train.csv')
 test = pd.read_csv('test.csv')
 ```
@@ -58,9 +58,9 @@ plt.show()
 ```
 ![GitHub Logo](/images/hist1.png)
 
-Since, we are going to use Linear Regression method and the data are skewed, it is better to take logarithm of the price values for getting more precise predictions.
+Since, we are going to use Linear Regression method and the data are skewed, it is better to take logarithm of the price values for removing skewness and getting more precise predictions.
 
-Some useful mini steps are:
+Other important substeps are:
 
 - Dealing with numeric features
  (We will find most correlated (positive/negative) features with sale prices and removing outliers)
@@ -68,6 +68,8 @@ Some useful mini steps are:
 - Dealing with non-numeric features
 - Transforming and engineering features
 (We will use one-hot encoding to transform some non-numeric columns into a numeric ones)
+
+**To see the details of each substeps please take a look at the Kaggle_House_SalePrice.ipynb.**
 
 ### Step 3: Build a linear model
 
@@ -82,7 +84,5 @@ Partitioning the data into *train* and *valid* allows us to evaluate our model p
 
 ### Step 4: Make a submission file
 
-At this point, we are ready to create a csv file including the predicted SalePrice for each observation in the test.csv dataset.
-
-
+At this point, we are ready to create a csv file including the predicted SalePrice for each observation in the test.csv dataset. After making submission file we should go to the submission page to make a submission.
 
