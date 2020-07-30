@@ -1,101 +1,54 @@
-# Kaggle: House Prices Competition
+Kaggle: House Prices Competition
+=============
 
-This is one of the kaggle competition named "House Prices: Advanced Regression Techniques competition".
+####  Competition Description
 
-I will go through the following steps to get a successful Kaggle submission:
+![competition logo](https://storage.googleapis.com/kaggle-competitions/kaggle/5407/media/housesbanner.png)
 
-Download the data
+Ask a home buyer to describe their dream house, and they probably won't begin with the height of the basement ceiling or the proximity to an east-west railroad. But this playground competition's dataset proves that much more influences price negotiations than the number of bedrooms or a white-picket fence.
 
-Explore the data
+With 79 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa, this competition challenges you to predict the final price of each home.
 
-Feature engineering 
+#### What we do
 
-Make a model
+Here, I use the simple Linear Regression method to predict homes price. I will go through the following four steps:
 
-Make a submition file
+1. Download the data
+2. Explore the data and Feature engineering
+3. Build a model
+4. Make a submition file
 
+### Step 1: Download the data
 
-## Getting Started
+At the first step we need to download the competition [data](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data). 
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+#### File descriptions
+- train.csv - the training set
+- test.csv - the test set
+- data_description.txt - full description of each column, originally prepared by Dean De Cock but lightly edited to match the column names used here
+- sample_submission.csv - a benchmark submission from a linear regression on year and month of sale, lot square footage, and number of bedrooms
 
-### Prerequisites
+It is very useful to take a look at data_description.txt file that contains all information about the features in this competetion.
 
-What things you need to install the software and how to install them
+The test.csv file contains 80 features, while train.csv file has 81 features. The difference comes forom this fact that the test data does not have the  sale price column!
 
-```
-Give examples
-```
+### Step 2: Explore the data and Feature engineering
 
-### Installing
+The main aim is to predict the sale price of the homes. In the training data set, the SalePrice column shows this information which is the target variable.
 
-A step by step series of examples that tell you how to get a development env running
+After analyzing data, we obtain useful information about the data. For instance, we will find that home price distribution is positively skewed. Since, we are going to use Linear Regression method and the data are skewed, it is better to take logarithm of the price values for getting more precise predictions.
 
-Say what the step will be
+Some useful mini steps are:
 
-```
-Give the example
-```
+- Dealing with numeric features
+ (We will find most correlated (positive/negative) features with sale prices and removing outliers)
+- Dealing with null values
+- Dealing with non-numeric features
+- Transforming and engineering features
+(We will use one-hot encoding to transform some non-numeric columns into a numeric ons)
 
-And repeat
+### Step 3: Build a linear model
 
-```
-until finished
-```
+At this step, we prepare the data for modeling by seperating the features and the target variable.
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
 
