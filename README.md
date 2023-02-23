@@ -3,7 +3,9 @@ Kaggle: House Prices
 
 ####  Competition Description
 
-Kaggle is a platform for Data Science where people may share, cooperate, and compete. Competition is a fundamental component of Kaggle that allows users to practice on real-world data and evaluate their abilities with and against an international community. This repository will demonstrate how to approach and enter a Kaggle competition, including data exploration, feature creation and engineering, model construction, and prediction submission.
+If you ask a prospective homeowner to describe their ideal home, they will likely not include the basement ceiling height or the closeness to an east-west railroad. Yet, the data from this playground competition demonstrates that factors other than the number of bedrooms and a picket fence significantly impact price discussions.
+
+With 79 explanatory factors covering (nearly) every element of residential dwellings in Ames, Iowa, this competition requires you to estimate the final price of each property.
 
 #### What we do
 
