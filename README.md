@@ -1,4 +1,4 @@
-Kaggle: RSNA Screening Mammography Breast Cancer Detection
+Kaggle: House Prices
 =============
 
 ####  Competition Description
