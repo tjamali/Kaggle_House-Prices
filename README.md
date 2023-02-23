@@ -3,7 +3,7 @@ Kaggle: RSNA Screening Mammography Breast Cancer Detection
 
 ####  Competition Description
 
-The objective of this contest is to detect breast cancer. The model should be trained on mammograms collected through routine screening. Efforts to improve the automation of detection in screening mammography may make radiologists more precise and productive, while enhancing the quality and safety of patient care. It might also aid in reducing medical expenses and unneeded treatments.
+Kaggle is a platform for Data Science where people may share, cooperate, and compete. Competition is a fundamental component of Kaggle that allows users to practice on real-world data and evaluate their abilities with and against an international community. This repository will demonstrate how to approach and enter a Kaggle competition, including data exploration, feature creation and engineering, model construction, and prediction submission.
 
 #### What we do
 
